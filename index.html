@@ -36,3 +36,59 @@
         }
         }
       </script></div>
+    
+    <!-- <label>金沢工業大学</label> -->
+    <div class="inline-block_test">
+    <select id="model" onchange="flight()">
+      <option value="">降りるバス停を選択</option>
+      <option value=1 title=26>高橋</option>
+      <option value=2 title=27>工大前駅</option>
+      <option value=4 title=28>カミーノ</option>
+      <option value=5 title=29>喜多記念館</option>
+      <option value=6 title=30>本町4丁目</option>
+      <option value=7 title=31>若松</option>
+      <option value=11 title=1>フォルテ</option>
+      <option value=16 title=2>太平寺</option>
+      <option value=18 title=3>カレード</option>
+      <option value=19 title=4>太平寺西</option>
+      <option value=20 title=5>堀内東</option>
+      <option value=21 title=6>堀内公民館</option>
+      <option value=22 title=7>郷公民館</option>
+      <option value=23 title=8>蓮花寺</option>
+      <option value=26 title=9>明倫高校</option>
+      <option value=27 title=10>下林郵便局</option>
+      <option value=28 title=11>下林</option>
+      <option value=28 title=12>位川</option>
+      <option value=32 title=13>野々市市役所</option>
+      <option value=33 title=14>三納</option>
+      <option value=34 title=15>老人福祉センター</option>
+      <option value=35 title=16>矢作</option>
+      <option value=36 title=17>菅原団地</option>
+      <option value=36 title=18>菅原小学校</option>
+      <option value=38 title=19>菅原</option>
+      <option value=38 title=20>住吉</option>
+      <option value=39 title=21>すみよし公園</option>
+      <option value=40 title=22>扇が丘</option>
+      <option value=41 title=23>扇が丘東</option>
+      <option value=43 title=24>工業大学東</option>
+      </select></div>
+    
+    <div class="inline-block_test">
+    <div id="message_area"></div> 
+    <script language="javascript" type="text/javascript">
+      // イベントハンドラー
+      function flight() {
+        var model = document.getElementById("model").value;
+        var message = "";
+        if(model) {
+          message = "所要時間は"+ " " + model +"分です";
+        }
+        document.getElementById("message_area").innerHTML = message;
+      }
+
+      // イベントハンドラーを対応付ける
+      document.getElementById("call").onchange = flight;
+    </script></div>
+      </p>
+  </body>
+</html>
