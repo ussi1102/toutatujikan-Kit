@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="横一列にするやつ.css">
+  </head>
+  <body>
+      <p class="font">
+      <div class="inline-block_test">
+      <script>
+        today = new Date();
+      h = today.getHours();
+      Min = today.getMinutes();
+      var sh = String(h);
+      var sMin = String(Min);
+      if (sMin.length == 1){
+        sMin = "0" + sMin;
+      }
+      var shMin = sh + sMin;
+      var hmin = Number(shMin);
+      var items = [728,813,858,943,1028,1115,1200,1245,1330,1415,1500,1545,1630,1715,1800,1845,1930];
+      for (let i = 0; i < items.length; i++){
+        zikoku = items[i];
+        if(zikoku > hmin){
+          for (let a = i; a < i+1; a++){
+            var ima=sh+sMin
+            var ato=items[a]-ima
+            if(ato<45){
+            T=ato
+            }else{
+            T=ato-40
+            }
+            document.write("あと"+T+"分で到着します。");
+          }
+          break;
+        }
+        }
+      </script></div>
