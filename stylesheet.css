@@ -1,13 +1,1 @@
-.inline-block_test {
-    width: 24%;            /* 幅指定 */
-    display:  inline-block;     /* インラインブロック要素にする */
-    vertical-align:  top;       /* 要素を上揃えにする */
-    background-color:  #fff;    /* 背景色指定 */
-    margin-bottom: 10px;        /* 要素同士の隙間調整 */
-    padding:  10px;             /* 余白指定 */
-    box-sizing: border-box;     /* 崩れ防止 */
-}
 
-.font{
-    font-size: 0px;
-}
